@@ -41,7 +41,8 @@
 
 ## :dart: Sobre o desafio ##
 
-Desafio 1 da trilha de ReactJS da Rocketseat onde o objetivo é praticar os conceitos do React. Essa será uma aplicação onde o seu principal objetivo é uma pequena aplicação de atividades a fazer, para treinar um pouco mais sobre manipulação do estado no React.
+About
+Desafio 1 do módulo 1 da trilha de ReactJS da Rocketseat onde o objetivo é praticar os conceitos do React. Essa será uma aplicação onde o seu principal objetivo é uma pequena aplicação de atividades a fazer, para treinar um pouco mais sobre manipulação do estado no React.
 
 - Adicionar uma nova tarefa
 - Remover uma tarefa
