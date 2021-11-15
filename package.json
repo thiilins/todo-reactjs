@@ -1,11 +1,11 @@
 {
-  "name": "01-github-explorer",
+  "name": "to-do-list-conceitos-do-reactjs",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve",
-    "build": "cross-env NODE_ENV=production webpack",
+    "uild": "cross-env NODE_ENV=production webpacbk",
     "test": "jest --watchAll"
   },
   "dependencies": {
