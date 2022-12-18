@@ -1,11 +1,10 @@
-import '../styles/header.scss'
-
+import { HeaderContainer } from "./styles";
 export function Header() {
   return (
-    <header className="header">
+    <HeaderContainer>
       <div>
-        <img src="/logo.svg" alt="to.do"/>
+        <img src="/logo.svg" alt="to.do" />
       </div>
-    </header>
-  )
+    </HeaderContainer>
+  );
 }

@@ -1,13 +1,12 @@
-import { TaskList } from './components/TaskList'
+import { TaskList } from "./components/TaskList";
 import { Header } from "./components/Header";
-import './styles/global.scss'
-
-
-export function App() {
+import GlobalStyle from "./styles/global";
+export default function App() {
   return (
     <>
+      <GlobalStyle />
       <Header />
       <TaskList />
     </>
-  )
+  );
 }

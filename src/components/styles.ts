@@ -1,18 +1,35 @@
-section.task-list {
+import styled from "styled-components";
+
+export const HeaderContainer = styled.header`
+  background: var(--blue);
+  padding-top: 2rem;
+
+  > div {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    padding: 2rem 1rem 12rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+export const TaskListContainer = styled.section`
   background: var(--shapes);
   border-radius: 1rem;
-  
+
   margin-top: -10rem;
   padding: 70px 60px;
-  
+
   filter: drop-shadow(0px 24px 64px rgba(0, 0, 0, 0.06));
-  
+
   header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+
     h2 {
       color: var(--text-title);
       font-size: 2.25rem;
@@ -25,19 +42,19 @@ section.task-list {
 
       background: #fff;
       font-size: 16px;
-      
+
       input {
         flex: 1;
         background: var(--background);
         border: 0;
         color: var(--text);
         padding: 12px 24px;
-        
+
         border-radius: 8px;
         border: 0;
-        
+
         &::placeholder {
-          color: var(--text-light)
+          color: var(--text-light);
         }
       }
 
@@ -66,12 +83,12 @@ section.task-list {
 
     ul {
       list-style: none;
-  
+
       li {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #EBEBEB;
+        border-bottom: 1px solid #ebebeb;
         padding: 1rem 0;
 
         div {
@@ -87,7 +104,7 @@ section.task-list {
 
           &.completed {
             p {
-              text-decoration:line-through;
+              text-decoration: line-through;
               opacity: 0.6;
             }
           }
@@ -97,7 +114,7 @@ section.task-list {
             position: relative;
             padding-left: 14px;
             margin-bottom: 18px;
-          
+
             input {
               position: absolute;
               opacity: 0;
@@ -113,9 +130,9 @@ section.task-list {
                 & ~ .checkmark:after {
                   display: block;
                 }
-              } 
+              }
             }
-          
+
             .checkmark {
               position: absolute;
               top: 0;
@@ -124,7 +141,7 @@ section.task-list {
               height: 16px;
               background-color: var(--background);
               border-radius: 2px;
-          
+
               &:after {
                 content: "";
                 position: absolute;
@@ -151,11 +168,11 @@ section.task-list {
 
           &:hover {
             svg {
-              filter: brightness(0.5)
+              filter: brightness(0.5);
             }
           }
         }
       }
-    } 
+    }
   }
-}
+`;

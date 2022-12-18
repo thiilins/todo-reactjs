@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components";
+export default createGlobalStyle`
 :root {
   --blue: #273FAD;
   --green: #3FAD27;
@@ -33,3 +35,4 @@ input, textarea {
 button, .checkmark {
   cursor: pointer;
 }
+`;
