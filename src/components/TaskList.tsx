@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { TaskListContainer } from "./styles";
 import { FiTrash, FiCheckSquare } from "react-icons/fi";
+import usePersistedState from "../hooks/usePersistedState";
 
 interface Task {
   id: number;
@@ -10,7 +11,23 @@ interface Task {
 }
 
 export function TaskList() {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = usePersistedState<Task[]>("tasks", [
+    {
+      id: Math.random(),
+      title: "Comprar Pão",
+      isComplete: false,
+    },
+    {
+      id: Math.random(),
+      title: "Levar Carro para lavar",
+      isComplete: false,
+    },
+    {
+      id: Math.random(),
+      title: "Comprar Ração para o Gato",
+      isComplete: false,
+    },
+  ]);
   const [newTaskTitle, setNewTaskTitle] = useState("");
 
   function handleCreateNewTask() {

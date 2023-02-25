@@ -19,7 +19,7 @@ export const TaskListContainer = styled.section`
   background: var(--shapes);
   border-radius: 1rem;
 
-  margin-top: -10rem;
+  margin-top: -10rem !important;
   padding: 70px 60px;
 
   filter: drop-shadow(0px 24px 64px rgba(0, 0, 0, 0.06));
