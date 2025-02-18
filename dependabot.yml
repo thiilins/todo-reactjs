@@ -1,0 +1,22 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'npm'
+      - 'dependencies'
+    reviewers:
+      - 'thiilins'
+    commit-message:
+      prefix: 'chore(deps)'
+      include: 'scope'
+    # Habilita auto-merge para PRs aprovadas
+    allow:
+      - dependency-type: "all"
